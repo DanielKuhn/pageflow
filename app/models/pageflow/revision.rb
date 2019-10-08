@@ -161,7 +161,7 @@ module Pageflow
         file_usage.copy_to(revision)
       end
 
-      revision_components do |revision_component|
+      find_revision_components.each do |revision_component|
         revision_component.copy_to(revision)
       end
 
@@ -169,22 +169,10 @@ module Pageflow
       revision
     end
 
-    def revision_components
-      Pageflow.config.revision_components.each do |model|
-        model.all_for_revision(self).each do |record|
-          yield(record)
-        end
+    def find_revision_components
+      Pageflow.config.revision_components.flat_map do |model|
+        model.all_for_revision(self).to_a
       end
-    end
-
-    def serialized_components
-      components = []
-      revision_components do |revision_component|
-        components << {
-          revision_component.class.name => revision_component.attributes.except('revision_id')
-        }
-      end
-      components
     end
 
     def self.depublish_all
