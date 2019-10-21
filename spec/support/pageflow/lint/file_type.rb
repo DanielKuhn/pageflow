@@ -15,7 +15,7 @@ module Pageflow
 
           before do
             pageflow_configure do |config|
-              page_type = TestPageType.new(name: :test,
+              page_type = TestPageType.new(name: 'test_page_type',
                                            file_types: [file_type])
               config.page_types.clear
               config.page_types.register(page_type)
