@@ -313,9 +313,13 @@ export default [
     },
     foreground: [
       {
-        type: 'inlineVideoFullWidth',
+        type: 'inlineVideo',
         position: 'full',
-        autoplay: true
+        props: {
+          id: 'videoInselInterviewToni',
+          autoplay: true,
+          controls: true
+        }
       }
     ]
   },
@@ -344,10 +348,12 @@ export default [
         }
       },
       {
-        type: 'presentationMediaInlineImage1',
-        position: 'inline',
+        type: 'inlineImage',
         props: {
-          caption: 'Dies ist ein Inline-Bild mit Bild-Unterschrift'
+          id: 'braunkohleInline1',
+          caption: 'Dies ist ein Inline-Bild mit Bild-Unterschrift',
+          focusX: 12,
+          focusY: 90
         }
       },
       {
@@ -363,8 +369,12 @@ export default [
         }
       },
       {
-        type: 'inlineVideoDrone',
-        autoplay: true
+        type: 'inlineVideo',
+        props: {
+          id: 'videoGarzweilerDrohne',
+          autoplay: true,
+          controls: true
+        }
       },
       {
         type: 'textBlock',
@@ -399,10 +409,12 @@ export default [
         }
       },
       {
-        type: 'presentationMediaStickyImage1',
-        position: 'sticky',
+        type: 'stickyImage',
         props: {
-          caption: 'Dies ist ein sticky image'
+          id: 'braunkohleSticky1',
+          caption: 'Dies ist ein sticky image',
+          focusX: 12,
+          focusY: 90
         }
       },
       {
@@ -441,8 +453,10 @@ export default [
         props: {dummy: true}
       },
       {
-        type: 'presentationMediaStickyImage2',
-        position: 'sticky'
+        type: 'stickyImage',
+        props: {
+          id: 'braunkohleSticky2'
+        }
       },
       {
         type: 'loremIpsum1',
@@ -457,8 +471,10 @@ export default [
         props: {dummy: true}
       },
       {
-        type: 'presentationMediaStickyImage3',
-        position: 'sticky'
+        type: 'stickyImage',
+        props: {
+          id: 'braunkohleSticky3'
+        }
       },
       {
         type: 'loremIpsum1',
