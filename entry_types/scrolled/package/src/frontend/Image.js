@@ -43,18 +43,6 @@ export default function Image(props) {
   /* before/after example images */
   const haldernChurch1 = awsBucket+'before_after/haldern_church1.jpg';
   const haldernChurch2 = awsBucket+'before_after/haldern_church2.jpg';
-  const chernobylBefore = awsBucket+'before_after/chernobyl_before.png';
-  const chernobylAfter = awsBucket+'before_after/chernobyl_after.png';
-  const aleppoBefore = awsBucket+'before_after/aleppo_before.jpg';
-  const aleppoAfter = awsBucket+'before_after/aleppo_after.jpg';
-
-  /* x-ray example images */
-  const xray1 = awsBucket+'x_ray/1.jpg';
-  const xray2 = awsBucket+'x_ray/2.jpg';
-  const xray3 = awsBucket+'x_ray/3.jpg';
-  const xray1Stripe = awsBucket+'x_ray/1.jpg';
-  const xray2Stripe = awsBucket+'x_ray/2.jpg';
-  const xray3Stripe = awsBucket+'x_ray/3.jpg';
 
   const presentationScrollmation1Desktop = awsBucket+'scrollmation/desktop/1.jpg';
   const presentationScrollmation2Desktop = awsBucket+'scrollmation/desktop/2.jpg';
@@ -88,16 +76,6 @@ export default function Image(props) {
     tool3,
     haldernChurch1,
     haldernChurch2,
-    chernobylBefore,
-    chernobylAfter,
-    aleppoBefore,
-    aleppoAfter,
-    xray1,
-    xray2,
-    xray3,
-    xray1Stripe,
-    xray2Stripe,
-    xray3Stripe,
     braunkohleBackground1,
     braunkohleInline1,
     braunkohleInline2,
