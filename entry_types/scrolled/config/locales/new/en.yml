@@ -85,6 +85,17 @@ en:
           name: Inline Video
           tabs:
             general: Inline Video
+          attributes:
+            autoplay:
+              label: Autplay
+              inline_help: >
+                When autoplay is enabled, the video starts playing automatically once it is
+                fully scrolled into view, and automatically stops playing when it is scrolled out of
+                view.
+            controls:
+              label: Show player controls
+            id:
+              label: "Video"
         inlineBeforeAfter:
           name: Before/After
           tabs:
@@ -166,7 +177,9 @@ en:
           section: Section
         attributes:
           backdropImage:
-            label: Background
+            label: Background-Image
+          backdropVideo:
+            label: Background-Video
           backdropType:
             label: Background-Type
             inline_help: >
