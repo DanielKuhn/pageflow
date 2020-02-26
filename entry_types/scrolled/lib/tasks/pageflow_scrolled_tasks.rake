@@ -48,6 +48,16 @@ namespace :pageflow_scrolled do
                                           testReferenceName: 'turtle'
                                         }
                                       }.stringify_keys
+                                    },
+                                    video_files: {
+                                      interview_toni: {
+                                        url: 'https://s3-eu-west-1.amazonaws.com/de.codevise.pageflow.development/pageflow-next/seed-assets/videos/08_interview_toni.mp4',
+                                        configuration: {
+                                          width: 1920,
+                                          height: 1080,
+                                          testReferenceName: 'interview_toni'
+                                        }
+                                      }.stringify_keys
                                     })
       end
 
