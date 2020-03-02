@@ -181,6 +181,7 @@ de:
         credits: Credits
         edited_at: Geändert am
         embed_code: Einbetten
+        type_name: Beitrags-Typ
         first_published_at: Erstmals veröffentlicht am
         keywords: Schlüsselwörter
         locale: Sprache
@@ -418,6 +419,9 @@ de:
           same_parent_chapter: Nur Kapitel mit gleichem übergeordneten Kapitel
           same_parent_page: Nur Kapitel mit gleicher übergeordneter Seite
       pageflow/entry:
+        type_names:
+          paged: Seitenbasiert / klassisch
+          scrolled: Kontinuierlich scrollend / Pageflow Next
         publication_states:
           not_published: Nicht veröffentlicht
           published_with_password_protection: Mit Passwortschutz veröffentlicht

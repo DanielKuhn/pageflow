@@ -105,6 +105,13 @@ module Pageflow
       f.inputs do
         f.input :title, hint: I18n.t('pageflow.admin.entries.title_hint')
 
+        if f.object.new_record?
+          f.input :type_name,
+                  as: :select,
+                  include_blank: false,
+                  collection: collection_for_entry_types
+        end
+
         if authorized?(:update_account_on, resource)
           f.input(:account,
                   as: :searchable_select,
@@ -251,7 +258,7 @@ module Pageflow
       end
 
       def permitted_attributes
-        result = [:title]
+        result = [:title, :type_name]
         target = if !params[:id] && current_user.admin?
                    Account.first
                  elsif params[:id]

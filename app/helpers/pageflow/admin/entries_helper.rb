@@ -18,6 +18,12 @@ module Pageflow
           I18n.t(state, scope: 'activerecord.values.pageflow/entry.publication_states')
         end
       end
+
+      def collection_for_entry_types
+        %w[paged scrolled].index_by do |type|
+          I18n.t(type, scope: 'activerecord.values.pageflow/entry.type_names')
+        end
+      end
     end
   end
 end
