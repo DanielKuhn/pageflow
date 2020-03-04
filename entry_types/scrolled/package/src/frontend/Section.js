@@ -39,7 +39,8 @@ export default function Section(props) {
 
   const sectionProperties = {
     layout: props.layout,
-    invert: props.invert
+    invert: props.invert,
+    sectionIndex: props.sectionIndex
   }
 
   const [motifAreaRect, setMotifAreaRectRect] = useBoundingClientRect();
