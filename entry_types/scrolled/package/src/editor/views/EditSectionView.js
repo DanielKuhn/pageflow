@@ -6,8 +6,14 @@ export const EditSectionView = EditConfigurationView.extend({
 
   configure: function(configurationEditor) {
     configurationEditor.tab('section', function() {
+      this.input('transition', SelectInputView, {
+        values: ['beforeAfter', 'fade', 'fadeBg', 'reveal', 'scroll', 'scrollOver']
+      });
       this.input('layout', SelectInputView, {
         values: ['left', 'right', 'center']
+      });
+      this.input('appearance', SelectInputView, {
+        values: ['shadow', 'cards', 'transparent']
       });
       this.input('backdropType', SelectInputView, {
         values: ['image', 'color', 'video'],
@@ -30,6 +36,7 @@ export const EditSectionView = EditConfigurationView.extend({
         visibleBindingValue: 'video',
         positioning: false
       });
+      this.input('fullHeight', CheckBoxInputView);
       this.input('invert', CheckBoxInputView);
     });
   }
